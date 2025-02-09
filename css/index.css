@@ -1,0 +1,363 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #ffa850, #ff7e14);
+    color: white;
+  }
+  
+  .logo {
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #333; */
+    padding: 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.nav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Sidebar (Hidden by default) */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#ff7e14;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Mobile Menu Button */
+.mobile-menu {
+    display: none;
+}
+
+.menu-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ff7e14;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+}
+  
+  .photo-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if screen size is small */
+    justify-content: space-between;
+    gap: 16px; /* Adds space between the images */
+}
+
+.photo-row a {
+    flex: 1 1 calc(25% - 16px); /* Each image takes 25% width minus the gap */
+    max-width: calc(25% - 16px); /* Prevents exceeding row width */
+}
+
+.photo-row img {
+    width: 100%; /* Makes the image fill the container */
+    height: 400px; /* Ensures consistent height */
+    object-fit: cover; /* Crops the image to fit without distortion */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.photo-row img:hover {
+    transform: scale(1.1); /* Smooth scale-up effect on hover */
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    overflow: hidden; /* Ensures rounded corners on image */
+    text-align: center;
+}
+
+.about, .services {
+    padding: 40px 0;
+    text-align: center;
+    background: #fff;
+    margin-top: 10px;
+    flex: column;
+}
+
+.about h2, .services h2 {
+    font-size: 2rem;
+    color: #1e00ff;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.services .container,
+.services .donation {
+    flex: 1 1 calc(50% - 20px); /* Each takes 50% of the width minus the gap */
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services h2 {
+    text-align: center;
+    color: #333;
+}
+
+.services h4 {
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.services .donation img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.services .donation img:hover {
+    transform: scale(1.1); /* Smooth scaling effect on hover */
+}
+
+
+
+/* Service Section */
+.heartbeat {
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    animation: heartbeat 1.5s infinite;
+    transform-origin: center center;
+}
+
+/* Heartbeat animation */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.1);
+    }
+    40% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    80% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Separator Container */
+.separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Contact Section */
+.contact {
+    flex: 1;
+    text-align: center;
+    gap: 5px;
+}
+
+.contact .container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Photo Section */
+.photo-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 45%;
+}
+
+.photo-section img {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #fba92e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff7307;
+}
+
+
+
+.footer {
+    background: linear-gradient(90deg, #ffa850, #ff7e14);
+    color: white;
+    align-items:center ;
+    padding: 5px;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+  
+  .footer p{
+    text-align: center;
+    padding: 0%;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .logo {
+        margin-left: 5px;
+        font-size: 8px;
+        font-weight: bold;
+      }
+      .photo-row img {
+        width: 20 px; /* Makes the image fill the container */
+        height: 100px; /* Ensures consistent height */
+        object-fit: cover; /* Crops the image to fit without distortion */
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .about, .services{
+        padding: 2px;
+    }
+
+    .nav {
+        display: none; /* Hide the regular nav on small screens */
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+
+
+}
