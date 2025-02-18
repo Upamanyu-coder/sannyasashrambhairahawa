@@ -6,6 +6,60 @@ function closeSidebar() {
   document.getElementById("sidebar").style.width = "0";
 }
 
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    if (!validateForm()) return; // Validate form before proceeding
+
+    // Show the popup message
+    document.getElementById("popupMessage").style.display = "flex";
+    
+    // Reset the form
+    document.getElementById("contactForm").reset();
+});
+
+function closePopup() {
+    document.getElementById("popupMessage").style.display = "none";
+}
+
+//  For Check Email Valid 
+function validateForm() {
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var message = document.getElementById("message").value.trim();
+    var errorMessage = "";
+
+    // Name validation
+    if (name === "") {
+        errorMessage += "▪ कृपया तपाईंको नाम लेख्नुहोस्।\n";
+    }
+
+    // Email validation
+    var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailPattern.test(email)) {
+        errorMessage += "▪ कृपया वैध ईमेल लेख्नुहोस्।\n";
+    }
+
+    // Phone number validation (only digits, 10 characters)
+    var phonePattern = /^[0-9]{10}$/;
+    if (!phonePattern.test(phone)) {
+        errorMessage += "▪ कृपया १० अङ्कको फोन नम्बर लेख्नुहोस्।\n";
+    }
+
+    // Message validation
+    if (message === "") {
+        errorMessage += "▪ कृपया तपाईंको सन्देश लेख्नुहोस्।\n";
+    }
+
+    if (errorMessage !== "") {
+        alert(errorMessage);
+        return false;
+    }
+
+    return true; // Form submits if everything is valid
+}
+
 
 /*// Translate to English
 let isNepali = true; // Flag to track current language
