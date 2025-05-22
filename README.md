@@ -50,6 +50,7 @@ This is a static HTML/CSS/JavaScript website representing:
 - **Form Validation with JavaScript**
 - **Social Media Integration**
 - **Donation Call-to-Action**
+- ** https://postimg.cc/gallery/rTkYvgN- link of photos **
 
 ---
 
@@ -87,8 +88,3 @@ This project is for educational and non-commercial purposes.
 
 ```
 
----
-
-Let me know if you’d like to add badges, deploy it with GitHub Pages, or link a `.zip` download for offline use. And as always:  
-**Keep coding, keep glowing, Upamanyu!** 😎🔥
-```
