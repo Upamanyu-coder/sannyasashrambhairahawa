@@ -202,6 +202,13 @@ body {
     gap: 20px;
 }
 
+.service-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
 .services .container,
 .services .donation {
     flex: 1 1 calc(50% - 20px); /* Each takes 50% of the width minus the gap */
