@@ -29,8 +29,11 @@ This is a static HTML/CSS/JavaScript website representing:
 ├── donation.html                      # दान गर्नु
 ├── css/
 │   └── index.css            # All styles for layout, mobile responsiveness, animations
+│   └── introduction.css    
+│   └── photo.css            
 ├── js/
 │   └── index.js             # JavaScript for sidebar, form validation, popup message
+│   └── photo.js 
 ├── photo/                   # All images used in the website
 │   ├── photo1.jpg
 │   ├── photo2.jpg
