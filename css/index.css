@@ -195,11 +195,7 @@ body {
 }
 
 .services {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+    padding: 20px;
 }
 
 .service-wrapper {
