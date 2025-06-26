@@ -84,7 +84,7 @@ Welcome to the official repository for the website of **Sanskrit Vidhya Sannyas 
 > अन्नेन क्षणिका तृप्तिः यावज्जीवञ्च विद्यया।"
 
 Support our Gurukul and Dharma-based educational efforts.  
-[Click here to donate 🙏](https://www.sanskritvidhyasannyasashram.org.np/donation.html)
+[Click here to donate 🙏](https://www.sanskritvidhyasannyasashram.org.np/donation)
 
 ---
 
