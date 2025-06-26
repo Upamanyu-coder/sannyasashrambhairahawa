@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Internally rewrite clean URLs to .html files
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Redirect .html URLs to clean versions (SEO-friendly)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^/]+)\.html\sHTTP/
+RewriteRule ^([^/]+)\.html$ /$1 [R=301,L]
