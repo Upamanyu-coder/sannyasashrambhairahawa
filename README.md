@@ -3,7 +3,7 @@
 
 > 🛕 A Spiritual, Educational & Cultural Gurukul Based in the Heart of **Lumbini**, Nepal
 
-![Ashram Logo](https://www.sanskritvidhyasannyasashram.org.np/photo/logo.png)
+![Ashram Logo](https://www.sanskritvidhyasannyasashram.org.np/photo/logo.png )
 
 Welcome to the official repository for the website of **Sanskrit Vidhya Sannyas Ashram**, a renowned spiritual center and Gurukul established in 2018 B.S. by **Brahmaleen Swami Narayannanda Giriji Maharaj**. Located in **Siddharthanagar-3, Bhairahawa, Rupandehi**, this institution is dedicated to preserving and promoting **Sanatan Dharma**, **Vedic education**, and **Sanskrit culture**.
 
@@ -54,6 +54,7 @@ Welcome to the official repository for the website of **Sanskrit Vidhya Sannyas 
 <p float="left">
   <img src="https://www.sanskritvidhyasannyasashram.org.np/photo/photo1.jpg" width="200"/>
   <img src="https://www.sanskritvidhyasannyasashram.org.np/photo/photo3.jpg" width="200"/>
+  <img src="https://www.sanskritvidhyasannyasashram.org.np/photo/photo5.jpg" width="200"/>
   <img src="https://www.sanskritvidhyasannyasashram.org.np/photo/photo4.jpg" width="200"/>
 </p>
 
